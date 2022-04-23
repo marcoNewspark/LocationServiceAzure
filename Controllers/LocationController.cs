@@ -83,8 +83,15 @@ namespace LocationService
                 { "lng", result.longitude },
                 { "lat", result.latitude}
             };
-
-            tc.AddEntity(entity);
+            try
+            {
+                tc.AddEntity(entity);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogTrace(ex.Message);
+                Console.WriteLine(ex.Message);
+            }
         }
     }
 }
