@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "SRbAsXd3trkir30j/JjAm4LKwhvnN0mSbKl73MPKBihjdPjg9ib7E/nV+6d82P3qygCrnKExxiL3cklY1sdzlQ==",
+  "success": true,
+  "projectFilePath": "C:\\src\\azuretraining\\LocationServiceWebApi\\LocationService\\LocationService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Marco Littel\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.11.1\\microsoft.visualstudio.azure.containers.tools.targets.1.11.1.nupkg.sha512",
+    "C:\\Users\\Marco Littel\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Marco Littel\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.23\\microsoft.netcore.app.host.win-x64.3.1.23.nupkg.sha512"
+  ],
+  "logs": []
+}

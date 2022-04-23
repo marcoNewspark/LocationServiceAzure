@@ -1,0 +1,8 @@
+E:\src\azuretraining\LocationService\LocationService\publish\LocationService.exe
+E:\src\azuretraining\LocationService\LocationService\publish\appsettings.Development.json
+E:\src\azuretraining\LocationService\LocationService\publish\appsettings.json
+E:\src\azuretraining\LocationService\LocationService\publish\LocationService.dll
+E:\src\azuretraining\LocationService\LocationService\publish\LocationService.deps.json
+E:\src\azuretraining\LocationService\LocationService\publish\LocationService.runtimeconfig.json
+E:\src\azuretraining\LocationService\LocationService\publish\LocationService.pdb
+E:\src\azuretraining\LocationService\LocationService\publish\Newtonsoft.Json.dll

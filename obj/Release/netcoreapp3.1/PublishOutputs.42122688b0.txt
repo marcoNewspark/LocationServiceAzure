@@ -1,0 +1,8 @@
+C:\src\azuretraining\LocationServiceWebApi\LocationService\obj\Release\netcoreapp3.1\PubTmp\Out\LocationService.exe
+C:\src\azuretraining\LocationServiceWebApi\LocationService\obj\Release\netcoreapp3.1\PubTmp\Out\appsettings.Development.json
+C:\src\azuretraining\LocationServiceWebApi\LocationService\obj\Release\netcoreapp3.1\PubTmp\Out\appsettings.json
+C:\src\azuretraining\LocationServiceWebApi\LocationService\obj\Release\netcoreapp3.1\PubTmp\Out\LocationService.dll
+C:\src\azuretraining\LocationServiceWebApi\LocationService\obj\Release\netcoreapp3.1\PubTmp\Out\LocationService.deps.json
+C:\src\azuretraining\LocationServiceWebApi\LocationService\obj\Release\netcoreapp3.1\PubTmp\Out\LocationService.runtimeconfig.json
+C:\src\azuretraining\LocationServiceWebApi\LocationService\obj\Release\netcoreapp3.1\PubTmp\Out\LocationService.pdb
+C:\src\azuretraining\LocationServiceWebApi\LocationService\obj\Release\netcoreapp3.1\PubTmp\Out\Newtonsoft.Json.dll
