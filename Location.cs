@@ -9,6 +9,12 @@ namespace LocationService
     {
         public string latitude { get; set; }
         public string longitude { get; set; }
+        public string greeting { get; set; }
+
+        public Location()
+        {
+            greeting = "Hello there.";
+        }
     }
 
     public class InputAddress
