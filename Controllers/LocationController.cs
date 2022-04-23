@@ -10,6 +10,8 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web;
 using Newtonsoft.Json.Linq;
+using Azure.Data.Tables;
+using Azure.Identity;
 
 namespace LocationService
 {
@@ -55,13 +57,29 @@ namespace LocationService
             var lat = resList[0]["bounds"]["northeast"]["lat"].Value<string>();
             var lng = resList[0]["bounds"]["northeast"]["lng"].Value<string>();
 
-
-            return Enumerable.Range(1, 1).Select(index => new Location
-            {
-                longitude = lng,
-                latitude = lat
-            }
+            var result = new Location();
+            result.longitude = lng;
+            result.latitude = lat;
+            StoreResultInTable(result);
+            return Enumerable.Range(1, 1).Select(index => result
                 ).ToArray();
+        }
+
+        private void StoreResultInTable(Location result)
+        {
+            var uri = new Uri("https://locationstoragemli.table.core.windows.net");
+            var tableName = "locationresponses";
+            // TableUriBuilder tb =  new TableUriBuilder(new Uri("https://locationstoragemli.table.core.windows.net/locationresponses"));
+
+            TableClient tc = new TableClient(uri, tableName, new DefaultAzureCredential());
+            var entity = new TableEntity()
+            {
+                { "Timestamp", DateTime.Now.ToString("yyyyMMddHHmmss")},
+                { "lng", result.longitude },
+                { "lat", result.latitude}
+            };
+
+            tc.AddEntity(entity);
         }
     }
 }
