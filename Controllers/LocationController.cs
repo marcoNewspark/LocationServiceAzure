@@ -69,10 +69,15 @@ namespace LocationService
         {
             var uri = new Uri("https://locationstoragemli.table.core.windows.net");
             var tableName = "locationresponses";
+            var SASConnectionString = "BlobEndpoint=https://locationstoragemli.blob.core.windows.net/;QueueEndpoint=https://locationstoragemli.queue.core.windows.net/;FileEndpoint=https://locationstoragemli.file.core.windows.net/;TableEndpoint=https://locationstoragemli.table.core.windows.net/;SharedAccessSignature=sv=2020-08-04&ss=bfqt&srt=o&sp=rwdlacupitfx&se=2022-04-23T22:27:01Z&st=2022-04-23T14:27:01Z&spr=https&sig=3ThYP9dScUxzKVfFFDERWQaITRh2o0%2FhiQ%2Bq8OEjMiA%3D";
             // TableUriBuilder tb =  new TableUriBuilder(new Uri("https://locationstoragemli.table.core.windows.net/locationresponses"));
 
-            TableClient tc = new TableClient(uri, tableName, new DefaultAzureCredential());
-            var entity = new TableEntity()
+            TableClient tc;
+            
+            tc = new TableClient(uri, tableName, new DefaultAzureCredential());
+            // tc = new TableClient(SASConnectionString, tableName);
+            var entity = new TableEntity("locationresult",  
+               Guid.NewGuid().ToString())
             {
                 { "Timestamp", DateTime.Now.ToString("yyyyMMddHHmmss")},
                 { "lng", result.longitude },

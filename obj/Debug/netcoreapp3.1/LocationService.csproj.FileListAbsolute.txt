@@ -46,7 +46,6 @@ C:\src\azuretraining\LocationServiceWebApi\LocationService\obj\Debug\netcoreapp3
 C:\src\azuretraining\LocationServiceWebApi\LocationService\obj\Debug\netcoreapp3.1\LocationService.dll
 C:\src\azuretraining\LocationServiceWebApi\LocationService\obj\Debug\netcoreapp3.1\LocationService.pdb
 C:\src\azuretraining\LocationServiceWebApi\LocationService\obj\Debug\netcoreapp3.1\LocationService.genruntimeconfig.cache
-C:\src\azuretraining\LocationServiceWebApi\LocationService\bin\Debug\netcoreapp3.1\LocationService.StaticWebAssets.xml
 C:\src\azuretraining\LocationServiceWebApi\LocationService\bin\Debug\netcoreapp3.1\Azure.Core.dll
 C:\src\azuretraining\LocationServiceWebApi\LocationService\bin\Debug\netcoreapp3.1\Azure.Data.Tables.dll
 C:\src\azuretraining\LocationServiceWebApi\LocationService\bin\Debug\netcoreapp3.1\Azure.Identity.dll
